@@ -11,9 +11,9 @@ vars:
 services:
   kit:
     component: fc
-    actions:
-      pre-deploy:
-        - component: fc build --use-docker --dockerfile ./Dockerfile
+#     actions:
+#       pre-deploy:
+#         - component: fc build --use-docker --dockerfile ./Dockerfile
     props:
       region: ${vars.region}
       service: ${vars.service}
