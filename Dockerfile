@@ -4,7 +4,7 @@ WORKDIR /usr/src/app
 COPY . /usr/src/app
 RUN gradle build
 
-FROM openjdk:17.0.2
+FROM openjdk:8
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 COPY --from=0 /usr/src/app/build/libs  /usr/src/app
