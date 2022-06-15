@@ -13,11 +13,7 @@ services:
     component: fc
     actions:
       pre-deploy:
-        - run: printenv
-          path: .
         - component: fc build --use-docker --dockerfile ./Dockerfile
-        - run: printenv
-          path: .
     props:
       region: ${vars.region}
       service: ${vars.service}
