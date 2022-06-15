@@ -1,5 +1,6 @@
 edition: 1.0.0
 name: 33-kit-backend
+access: default
 
 vars:
   region: cn-hangzhou
@@ -12,7 +13,11 @@ services:
     component: fc
     actions:
       pre-deploy:
+        - run: printenv
+          path: .
         - component: fc build --use-docker --dockerfile ./Dockerfile
+        - run: printenv
+          path: .
     props:
       region: ${vars.region}
       service: ${vars.service}
