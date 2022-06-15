@@ -1,5 +1,5 @@
 FROM gradle:7.4.2-jdk17-alpine
-# FROM openjdk:17.0.2
+FROM openjdk:17.0.2
 WORKDIR /usr/src/app
 COPY . .
 RUN gradle build
