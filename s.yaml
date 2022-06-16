@@ -25,7 +25,7 @@ services:
         timeout: 60
         runtime: custom-container
         customContainerConfig:
-          image: registry.cn-hangzhou.aliyuncs.com/fengchong_devops/test-demo
+          image: registry.cn-hangzhou.aliyuncs.com/fengchong_devops/test-demo:v1.0
         codeUri: ./
       triggers:
         - name: httpTrigger
