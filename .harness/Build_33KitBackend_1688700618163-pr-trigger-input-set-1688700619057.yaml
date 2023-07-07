@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_33KitBackend_1688700618163-pr-trigger-input-set
+  identifier: Build_33KitBackend_1688700618163prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: Build_33KitBackend_1688700618163
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
