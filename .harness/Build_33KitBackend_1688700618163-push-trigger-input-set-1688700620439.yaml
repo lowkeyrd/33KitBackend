@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_33KitBackend_1688700618163-push-trigger-input-set
+  identifier: Build_33KitBackend_1688700618163pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: Build_33KitBackend_1688700618163
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
